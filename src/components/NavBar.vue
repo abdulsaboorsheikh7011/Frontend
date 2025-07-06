@@ -1,11 +1,11 @@
 <template>
   <nav class="navbar">
-    <router-link to="/posts" class="nav-link">PostsPage</router-link>
-    <router-link to="/comments" class="nav-link">CommentsPage</router-link>
-    <router-link to="/albums" class="nav-link">AlbumsPage</router-link>
-    <router-link to="/photos" class="nav-link">PhotosPage</router-link>
-    <router-link to="/todos" class="nav-link">TodosPage</router-link>
-    <router-link to="/users" class="nav-link">UsersPage</router-link>
+    <router-link to="/posts" class="nav-link">Posts</router-link>
+    <router-link to="/comments" class="nav-link">Comments</router-link>
+    <router-link to="/albums" class="nav-link">Albums</router-link>
+    <router-link to="/photos" class="nav-link">Photos</router-link>
+    <router-link to="/todos" class="nav-link">Todos</router-link>
+    <router-link to="/users" class="nav-link">Users</router-link>
   </nav>
 </template>
 
@@ -17,28 +17,35 @@ export default {
 
 <style scoped>
 .navbar {
-  background-color: #007bff;
+  background: linear-gradient(90deg, #d1fd0d, #f24810);
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  padding: 12px;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 18px 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  margin: 20px;
 }
 
 .nav-link {
-  color: white;
+  color: #fff;
+  font-weight: 600;
   text-decoration: none;
-  padding: 8px 14px;
-  border-radius: 5px;
-  transition: background 0.3s ease;
-  font-weight: 500;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(3px);
 }
 
 .nav-link:hover {
-  background-color: #0056b3;
+  background-color: rgba(255, 255, 255, 0.393);
+  transform: scale(1.05);
 }
 
 .router-link-exact-active {
-  background-color: #0056b3;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px solid #ffffff;
 }
 </style>
